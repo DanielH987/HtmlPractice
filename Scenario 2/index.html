@@ -3,13 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Unique Word Counter</title>
+    <style>
+        p {
+            color: green;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <textarea name="uniqueWords" id="uniqueWords" placeholder="Write some words (e.g., Some words)"></textarea>
-    <button onclick="countUniqueWords()">Click me</button>
-    <p id="result">The unique word count is...</p>
-    <script src="script.js"></script>
+    <h1>Unique Word Counter</h1>
+    <textarea id="textInput" rows="10" cols="50" placeholder="Enter your text here..."></textarea><br>
+    <button onclick="countUniqueWords()">Count Unique Words</button>
+    <p id="result">The unique word count is ...</p>
+
+    <script>
+        function countUniqueWords() {
+            let text = document.getElementById('textInput').value;
+            let words = text.toLowerCase().match(/\b\w+\b/g);
+            let uniqueWords = new Set(words);
+            document.getElementById('result').innerText = 'The unique word count is ' + (uniqueWords ? uniqueWords.size : 0);
+        }
+    </script>
 </body>
 </html>
