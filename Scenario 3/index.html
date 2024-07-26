@@ -3,13 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Longest Word</title>
+    <style>
+        p {
+            color: purple;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
+    <h1>Compute Longesst Word</h1>
     <textarea name="textInput" id="textInput"></textarea>
-    <button onclick="ComputeLongestWord()">CLick Me</button>
+    <button onclick="ComputeLongestWord()">Compute Word</button>
     <p id="output">The longest word is...</p>
-    <script src="script.js"></script>
+
+    <script>
+        function ComputeLongestWord() {
+            const input = document.getElementById('textInput').value;  
+            const words = input.split(' ');
+            let longestWord = '';
+            for (let i=0; i< words.length; i++) {
+                if (words[i].length > longestWord.length) {
+                    longestWord = words[i];
+                }
+            }
+            document.getElementById('output').innerText = `The longest word is ${longestWord}`;
+        }
+    </script>
 </body>
 </html>
