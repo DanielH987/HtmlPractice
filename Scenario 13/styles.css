@@ -64,3 +64,36 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+article h2 {
+    margin-top: 0;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside li {
+    margin-bottom: 0.5rem;
+}
+
+aside a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+aside a:hover {
+    color: #ff6347;
+}
