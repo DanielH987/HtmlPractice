@@ -37,3 +37,30 @@ nav a {
 nav a:hover {
     color: #ff6347;
 }
+
+.content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+main {
+    background-color: #f4f4f4;
+    padding: 1rem;
+}
+
+aside {
+    background-color: #e4e4e4;
+    padding: 1rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
