@@ -24,3 +24,11 @@ form {
     justify-content: space-between;
     margin-bottom: 20px;
 }
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+}
