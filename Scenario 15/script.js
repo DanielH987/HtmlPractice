@@ -4,6 +4,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const todoList = document.getElementById('todo-list');
     let todos = [];
 
+    
+
+    function addTask(task) {
+        if (task.trim() === '') return;
+        const todo = {
+            id: Date.now(),
+            task: task,
+            completed: false
+        };
+        todos.push(todo);
+        renderList();
+    }
+
     function renderList() {
         todoList.innerHTML = '';
         todos.forEach(todo => {
