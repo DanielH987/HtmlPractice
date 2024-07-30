@@ -77,3 +77,7 @@ button.complete-btn:hover {
 button.remove-btn {
     background-color: #dc3545;
 }
+
+button.remove-btn:hover {
+    background-color: #c82333;
+}
