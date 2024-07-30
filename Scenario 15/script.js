@@ -4,7 +4,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const todoList = document.getElementById('todo-list');
     let todos = [];
 
-    
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        addTask(input.value);
+        input.value = '';
+    });
 
     function addTask(task) {
         if (task.trim() === '') return;
