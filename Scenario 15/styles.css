@@ -69,3 +69,7 @@ li.completed {
 button.complete-btn {
     background-color: #007bff;
 }
+
+button.complete-btn:hover {
+    background-color: #0056b3;
+}
