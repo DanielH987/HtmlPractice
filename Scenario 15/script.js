@@ -4,4 +4,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const todoList = document.getElementById('todo-list');
     let todos = [];
 
+    function toggleComplete(id) {
+        todos = todos.map(todo => todo.id === id ? { ...todo, completed: !todo.completed } : todo);
+        renderList();
+    }
+
+    function removeTask(id) {
+        todos = todos.filter(todo => todo.id !== id);
+        renderList();
+    }
 });
