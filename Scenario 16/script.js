@@ -1,3 +1,13 @@
+function fetchWeatherData(city) {
+    const apiKey = 'ea96669e77ec5f1a1ca37df38864656f';  // Replace with your actual API key
+    const url = `https://api.openweathermap.org/data/3.0/onecall?q=${city}&appid=${apiKey}&units=metric`;
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => displayWeatherData(data))
+        .catch(error => console.error('Error fetching weather data:', error));
+}
+
 function displayWeatherData(data) {
     const weatherInfo = document.getElementById('weather-info');
     if (data.cod === 200) {
