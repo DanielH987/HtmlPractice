@@ -42,6 +42,23 @@ nav a {
     padding: 2rem 1rem;
 }
 
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#contact-form label {
+    margin-bottom: 0.5rem;
+}
+
+#contact-form input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
 
 footer {
     background-color: #333;
