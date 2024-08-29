@@ -1,6 +1,6 @@
 function submitQuiz() {
     const answers = {
-        q1: 'C',
+        q1: 'A',
         q2: 'B',
         q3: 'A'
     };
