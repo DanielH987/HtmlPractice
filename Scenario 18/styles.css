@@ -20,3 +20,7 @@ body {
 h1 {
     text-align: center;
 }
+
+.question {
+    margin-bottom: 20px;
+}
