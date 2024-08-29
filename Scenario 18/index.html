@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quiz Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz Application</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <h2>1. What is the capital of France?</h2>
+                <ul>
+                    <li><label><input type="radio" name="q1" value="A"> A. Berlin</label></li>
+                    <li><label><input type="radio" name="q1" value="B"> B. Madrid</label></li>
+                    <li><label><input type="radio" name="q1" value="C"> C. Paris</label></li>
+                    <li><label><input type="radio" name="q1" value="D"> D. Rome</label></li>
+                </ul>
+            </div>
+            <div class="question">
+                <h2>2. What is the largest planet in our solar system?</h2>
+                <ul>
+                    <li><label><input type="radio" name="q2" value="A"> A. Earth</label></li>
+                    <li><label><input type="radio" name="q2" value="B"> B. Jupiter</label></li>
+                    <li><label><input type="radio" name="q2" value="C"> C. Mars</label></li>
+                    <li><label><input type="radio" name="q2" value="D"> D. Saturn</label></li>
+                </ul>
+            </div>
+            <div class="question">
+                <h2>3. Which element has the chemical symbol 'O'?</h2>
+                <ul>
+                    <li><label><input type="radio" name="q3" value="A"> A. Oxygen</label></li>
+                    <li><label><input type="radio" name="q3" value="B"> B. Gold</label></li>
+                    <li><label><input type="radio" name="q3" value="C"> C. Silver</label></li>
+                    <li><label><input type="radio" name="q3" value="D"> D. Hydrogen</label></li>
+                </ul>
+            </div>
+            <button type="button" onclick="submitQuiz()">Submit Quiz</button>
+        </form>
+        <div id="result-container" class="hidden">
+            <h2>Your Results:</h2>
+            <p id="results"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
