@@ -10,4 +10,15 @@ function submitQuiz() {
     const resultContainer = document.getElementById('result-container');
     const results = document.getElementById('results');
 
+    const userAnswers = {
+        q1: form.q1.value,
+        q2: form.q2.value,
+        q3: form.q3.value
+    };
+
+    for (const question in userAnswers) {
+        if (userAnswers[question] === answers[question]) {
+            score++;
+        }
+    }
 }
