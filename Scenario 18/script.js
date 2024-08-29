@@ -21,4 +21,8 @@ function submitQuiz() {
             score++;
         }
     }
+
+    results.textContent = `You scored ${score} out of ${Object.keys(answers).length}!`;
+
+    resultContainer.classList.remove('hidden');
 }
