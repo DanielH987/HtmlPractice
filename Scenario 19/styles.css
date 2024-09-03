@@ -15,3 +15,8 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
 }
+
+.gallery-item {
+    overflow: hidden;
+    position: relative;
+}
