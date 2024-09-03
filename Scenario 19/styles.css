@@ -9,3 +9,9 @@ body {
     background-color: #f0f0f0;
     padding: 20px;
 }
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
