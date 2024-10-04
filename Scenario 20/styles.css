@@ -9,10 +9,12 @@ body {
     height: 100vh;
 }
 
+/* Wrapper class */
 .wrapper {
     text-align: center;
 }
 
+/* Container class */
 .container {
     background-color: #fff;
     padding: 20px;
