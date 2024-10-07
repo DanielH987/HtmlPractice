@@ -1,7 +1,16 @@
 function sumEvenNumbers() {
     const input = document.getElementById('numberInput').value;
     const numbers = input.split(',').map(Number);
-    const evenNumbers = numbers.filter(number => number % 2 === 0).reduce((acc, number) => acc + number, 0);
+    const evenNumbersSum = calculateEvenNumbersSum(numbers);
 
-    document.getElementById('result').innerText = 'The sum is ' + evenNumbers;
+    displayResult(evenNumbersSum);
+}
+
+function calculateEvenNumbersSum(numbers) {
+    return numbers.filter(number => number % 2 === 0)
+                  .reduce((acc, number) => acc + number, 0);
+}
+
+function displayResult(sum) {
+    document.getElementById('result').innerText = 'The sum is ' + sum;
 }
